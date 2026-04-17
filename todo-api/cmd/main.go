@@ -28,7 +28,7 @@ func main() {
 	// ─── Inicializar servicios ────────────────────────────────────────────
 	jwtService := auth.NewJWTService("mi-secreto-super-seguro-cambiar-en-produccion")
 
-	// ─── Inicializar handlers ─────────────────────────────────────────────
+	// ─── Inicializar handlers ñ ─────────────────────────────────────────────
 	taskHandler := handlers.NewTaskHandler(repo)
 	authHandler := handlers.NewAuthHandler(repo, jwtService)
 
